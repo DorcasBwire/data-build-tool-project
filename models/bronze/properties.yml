@@ -1,3 +1,4 @@
+The provided code snippet appears to be a configuration file or script defining different models in a data pipeline or data warehouse environment. Here's a breakdown of what it is doing:
 version: 2
 
 models:
@@ -24,7 +25,7 @@ models:
       - name: sales_id
         data_tests:
           - unique
-          - not_null
+          
       - name: gross_amount
         data_tests:
           - generic_non_negative

@@ -1,5 +1,14 @@
-apples = {"Galla", "Red Delicious", "Fuji", "Granny Smith"}
+{% set apples = ["Galla", "Red Delicious", "Fuji", "Granny Smith"] %}
 
 {% for i in apples %}
-    {{ i }}
+
+    {% if i != "McIntosh" %}
+
+        {{ i }}
+
+    {% else %}
+        {{ "McIntosh is not an apple variety in this list." }}
+
+    {% endif %}
+
 {% endfor %}
